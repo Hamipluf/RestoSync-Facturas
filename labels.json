@@ -1,0 +1,12 @@
+[
+    {
+      "texto": "GRUPO BLANCALUNA A Factura de Venta A Codigo 01 ORIGINAL Nro: 0015-00275575 Fecha: 27/12/2023 Bidfood My Bidfood Casa Central: Humberto Primo 133 - Piso 8 C.A.B.A. - CP (C1103ACC) - ( (+54) 011-7079-4555 Distribuidora Blancaluna SA Centro Distribución: Juan Domingo Perón 3780 - Gral. Pacheco - CP (1617) IVA Responsable Inscripto Sucursal Puerto Iguazú: Feliz Bogado y Soberanía Nacional S/N Zona Industrial - CP (3370) Cuit: 30-69017223-9 ( (+54) 011-7079-4555 Int. 285 - (+54) 3757-577774 / 3757-331007 Ingresos Brutos: 901-190388-7 www.blancaluna.com.ar // www.mybidfood.com.ar Inicio de Actividades: 01/02/1997",
+      "etiquetas": [
+        {"tipo": "NOMBRE DE LA EMPRESA", "inicio": 0, "fin": 16, "valor": "GRUPO BLANCALUNA"},
+        {"tipo": "NUMERO DE FACURA", "inicio": 57, "fin": 74, "valor": "Nro: 0015-00275575"},
+        {"tipo": "FECHA", "inicio": 76, "fin": 92, "valor": "Fecha: 27/12/2023"},
+        {"tipo": "CODIGO POSTAL", "inicio": 166, "fin": 178, "valor": "CP (C1103ACC)"},
+        {"tipo": "CUIT DE LA EMPRESA", "inicio": 421, "fin": 439, "valor": "Cuit: 30-69017223-9"}
+      ]
+    }
+  ]

@@ -51,24 +51,15 @@ class AnalizeImageManager {
     return result;
   }
   extractData(text) {
-    const textFormated = text.join("\n");
-    const numeroFacturaRegex = /Nro:\s*([0-9-]+)/i;
-    const nombreEmpresaRegex = /Sres\s*\.:\s*([^\n]+)/i;
-    const tipoFacturaRegex = /Factura\s+de\s+Venta\s+(\w+)/i;
-    const fechaRegex = /Fecha:\s*(\d{1,2}\/\d{1,2}\/\d{4})/i;
+    console.log(text.join(" "))
+    const blancaluna =
+      "GRUPO BLANCALUNA A Factura de Venta A Codigo 01 ORIGINAL Nro: 0015-00275575 Fecha: 27/12/2023 Bidfood My Bidfood Casa Central: Humberto Primo 133 - Piso 8 C.A.B.A. - CP (C1103ACC) - ( (+54) 011-7079-4555 Distribuidora Blancaluna SA Centro Distribución: Juan Domingo Perón 3780 - Gral. Pacheco - CP (1617) IVA Responsable Inscripto Sucursal Puerto Iguazú: Feliz Bogado y Soberanía Nacional S/N Zona Industrial - CP (3370) Cuit: 30-69017223-9 ( (+54) 011-7079-4555 Int. 285 - (+54) 3757-577774 / 3757-331007 Ingresos Brutos: 901-190388-7 www.blancaluna.com.ar // www.mybidfood.com.ar Inicio de Actividades: 01/02/1997"
+    7;
 
-    const numeroFactura = textFormated.match(numeroFacturaRegex);
-    const nombreEmpresa = textFormated.match(nombreEmpresaRegex);
-    const tipoFactura = textFormated.match(tipoFacturaRegex);
-    const fecha = textFormated.match(fechaRegex);
-
-    return {
-      numeroFactura: numeroFactura ? numeroFactura[1] : null,
-      nombreEmpresa: nombreEmpresa ? nombreEmpresa[1] : null,
-      tipoFactura: tipoFactura ? tipoFactura[1] : null,
-      fecha: fecha ? fecha[1] : null,
-      totalAmount: this.extractTotalAmount(text),
-    };
+    const indexes = blancaluna
+      .split("")
+      .map((elem, index) => `${elem}: ${index}`);
+    return indexes;
   }
   sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
